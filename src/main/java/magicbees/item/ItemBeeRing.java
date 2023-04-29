@@ -128,8 +128,8 @@ public class ItemBeeRing extends Item implements IBauble {
         effects[index] = queen.doEffect(effects[index], housingLogic);
 
         try {
-            effects[index][0].setInteger(0, effects[index][0].getInteger(index) + 20);
-            effects[index][1].setInteger(0, effects[index][1].getInteger(index) + 20);
+            effects[index][0].setInteger(0, effects[index][0].getInteger(index) + 19);
+            effects[index][1].setInteger(0, effects[index][1].getInteger(index) + 19);
         } catch (Exception ignored) {}
 
         if (player.worldObj.isRemote && player.worldObj.getWorldTime() % 5 == 0) {
